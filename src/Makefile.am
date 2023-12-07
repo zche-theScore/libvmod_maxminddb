@@ -3,6 +3,10 @@ AM_CPPFLAGS = @VMOD_INCLUDES@ -Wall -Werror
 vmoddir = @VMOD_DIR@
 vmod_LTLIBRARIES = libvmod_maxminddb.la
 
+$(info VMOD_DIR is @VMOD_DIR@)
+$(info VMODTOOL is @VMODTOOL@)
+$(info VMOD_INCLUDES is @VMOD_INCLUDES@)
+
 libvmod_maxminddb_la_LDFLAGS = -module -export-dynamic -avoid-version -lmaxminddb
 
 libvmod_maxminddb_la_SOURCES = \
